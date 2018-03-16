@@ -5,10 +5,14 @@ What is the smallest positive number that is evenly divisible by all of the numb
 """
 
 i = 1
+done == FALSE
 
-for d in range(3, 10):
-	while i % d == 0:
-		d += 1
-		if d == 10:
-			print(i, 'is divisible by all!')
+while done == FALSE:
+	for d in range(3, 10):
+		while i % d == 0:
+			d += 1
+			if d == 10:
+				print(i, 'is divisible by all!')
+				done == TRUE
+	d = 3
 	i += 1
