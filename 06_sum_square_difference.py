@@ -1,3 +1,4 @@
+# coding=utf-8
 """
 The sum of the squares of the first ten natural numbers is,
 
@@ -9,3 +10,14 @@ Hence the difference between the sum of the squares of the first ten natural num
 
 Find the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.
 """
+
+import math
+nt = 0
+ss = 0
+
+def nat_ten():
+	for i in range(1,10):
+		nt = nt + pow(i,2)
+
+nat_ten()
+print(nt)
