@@ -15,9 +15,8 @@ import math
 nt = 0
 ss = 0
 
-def nat_ten():
-	for i in range(1,10):
-		nt = nt + pow(i,2)
+for i in range(1,101):
+	nt = nt + pow(i,2)
+	ss = pow(sum(range(1,101)),2)
 
-nat_ten()
-print(nt)
+print(ss-nt)
