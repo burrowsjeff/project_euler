@@ -55,10 +55,10 @@ i = 0
 tmp = 1
 
 while i <= 996:
-	for c in range (0,3):
+	for c in range (0,4):
 		tmp = tmp * index[i+c]
 	results.append(tmp)
-	tmp = 0
+	tmp = 1
 	i += 1
 
 print(max(results))
