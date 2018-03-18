@@ -13,10 +13,11 @@ from math import sqrt
 
 a = 1
 
-while a <= 331:
-	for b in range(a+1,332):
-		if (a+b+(sqrt((a+b)^2))) == 1000:
-			print('A =', a, 'B =', b, 'C =', (sqrt((a+b)^2)))
+while a <= 333:
+	for b in range((a+1), 666):
+		c = sqrt(a^2 + b^2)
+		if (a + b + c) == 1000:
+			print('A =', a, 'B =', b, 'C =', c)
+			print('Product is', (a * b * c))
 			break
-	print(a)
 	a += 1
