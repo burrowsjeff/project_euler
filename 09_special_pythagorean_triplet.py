@@ -10,12 +10,13 @@ Find the product abc.
 """
 
 from math import sqrt
+from math import pow
 
 a = 1
 
 while a <= 333:
 	for b in range((a+1), 666):
-		c = sqrt(a^2 + b^2)
+		c = sqrt(pow(a,2) + pow(b,2))
 		if (a + b + c) == 1000:
 			print('A =', a, 'B =', b, 'C =', c)
 			print('Product is', (a * b * c))
