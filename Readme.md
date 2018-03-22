@@ -17,72 +17,30 @@ You will need the following software on your local machine in order to clone thi
 
 ### Installing
 
-A step by step series of examples that tell you have to get a development env running
-
-Say what the step will be
+Clone this project to your local machine.
 
 ```
-Give the example
+git clone https://github.com/burrowsjeff/project_euler.git
 ```
 
-And repeat
+From within the project folder, start up Docker.
 
 ```
-until finished
+docker run -v $PWD:/share -i -t -p 8888:8888 continuumio/anaconda3 /bin/bash -c "/opt/conda/bin/jupyter notebook --notebook-dir=/share/notebooks --ip='*' --port=8888 --no-browser --allow-root"
 ```
 
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
+Copy the url from the Docker container and paste it into a web browser (which will look similar to the link below).
 
 ```
-Give an example
+http://localhost:8888/?token=insert_specific_session_token
 ```
 
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+This will take you into the Jupyter notebook which contains all the project methodology, code, and results.
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+* **Jeff Burrows** - *Initial work* - [website](https://jeffburro.ws/)
 
 ## Acknowledgments
 
-* Hat tip to anyone who's code was used
-* Inspiration
-* etc
+* (Hey, Jeff. Once you con people into helping you, don't forget to list them here.)
