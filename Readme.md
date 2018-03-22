@@ -17,19 +17,19 @@ You will need the following software on your local machine in order to clone thi
 
 ### Installing
 
-Clone this project to your local machine.
+Clone this project to your local machine:
 
 ```
 git clone https://github.com/burrowsjeff/project_euler.git
 ```
 
-From within the project folder, start up Docker.
+From within the project folder, start up Docker, and then launch a new image:
 
 ```
 docker run -v $PWD:/share -i -t -p 8888:8888 continuumio/anaconda3 /bin/bash -c "/opt/conda/bin/jupyter notebook --notebook-dir=/share/notebooks --ip='*' --port=8888 --no-browser --allow-root"
 ```
 
-Copy the url from the Docker container and paste it into a web browser (which will look similar to the link below).
+Copy the url from the Docker container and paste it into a web browser (which will look similar to the link below):
 
 ```
 http://localhost:8888/?token=insert_specific_session_token
