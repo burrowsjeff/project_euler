@@ -10,13 +10,10 @@ These instructions will get you a copy of the project up and running on your loc
 
 You will need the following software on your local machine in order to clone this repo and replicate my environment:
 
-```
-[Docker](https://www.docker.com/get-docker)
 
-[Git](https://git-scm.com/downloads)
-
-A text editor of your choosing. I am using [Sublime Text](https://www.sublimetext.com/).
-```
+* [Docker](https://www.docker.com/get-docker)
+* [Git](https://git-scm.com/downloads)
+* A text editor of your choosing. I am using [Sublime Text](https://www.sublimetext.com/).
 
 ### Installing
 
